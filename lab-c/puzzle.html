@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GeoPuzzle</title>
+        <link rel="stylesheet" href="puzzle.css">
+        <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+        <script src="leaflet-1.7.1/leaflet-src.js"></script>
+        <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+        <script src="leaflet-1.7.1/leaflet-image.js"></script>
+      </head>
+<body>
+    <h1>GeoPuzzle</h1>
+    <div id="loc-box"><strong><i>L o c a t i o n</i></strong><br><hr id="hrcoords"/>
+        Latitude: <i><span id="latitude"></span></i><br><br>
+        Longitude: <i><span id="longitude"></span></i>
+    </div>
+    <div id="buttons">
+        <button id="location-btn" onclick="getLocation()">Get Your Coords</button>
+        <button id="getRaster"onclick="getRasterMap()">Get Raster Map</button>
+    </div>
+    <div class="container">
+        <div id="map"></div>
+        <canvas id="rasterMap"></canvas>
+    </div>
+    <div id="puzzle-container"></div>
+    <script src="puzzle.js"></script>
+</body>
+</html>
